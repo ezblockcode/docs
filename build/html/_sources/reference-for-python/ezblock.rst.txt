@@ -3,30 +3,23 @@ Reference for Python
 
 import everything
 
-```python
-from ezblock import *
-```
+:code:`from ezblock import *`
+
 
 Methods
------------------------------
+-----------------------------   
 
 - :mod:`delay` - Delay for the given number of milliseconds.
 
-```python
-delay(ms)
-```
+:code:`delay(ms)`
 
 - :mod:`print` - replace the original print function to print via bluetooth.
 
-```python
-print(msg, end="/n", tag='[DEBUG]')
-```
+:code:`print(msg, end="/n", tag='[DEBUG]')`
 
 - :mod:`mapping` - masp a value from a range to another
 
-```python
-mapping(x, inmin, inmax, outmin, outmax)
-```
+:code:`mapping(x, inmin, inmax, outmin, outmax)`
 
 Classes
 ------------------------------
@@ -57,6 +50,4 @@ Classes
     Buzzer
     Sound
     Joystick
-    LED
-    Switch
     BLE

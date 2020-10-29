@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EzblockReadtheDocs'
+project = 'Ezblock'
 copyright = '2020, sunfounder'
 author = 'sunfounder'
 
