@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ezblock &mdash; technicalDocumentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to technicalDocumentation’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> technicalDocumentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ezblock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">technicalDocumentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ezblock</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ezblock.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ezblock">
+<h1>ezblock<a class="headerlink" href="#ezblock" title="Permalink to this headline">¶</a></h1>
+<p>import everything</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ezblock</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">delay</span></code> - Delay for the given number of milliseconds.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">delay</span><span class="p">(</span><span class="n">ms</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> - replace the original print function to print via bluetooth.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;/n&quot;</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s1">&#39;[DEBUG]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mapping</span></code> - masp a value from a range to another</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mapping</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">inmin</span><span class="p">,</span> <span class="n">inmax</span><span class="p">,</span> <span class="n">outmin</span><span class="p">,</span> <span class="n">outmax</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="Pin">class Pin - control I/O pins</a></p></li>
+<li><p><a class="reference external" href="ADC">class ADC - analog to digital converter</a></p></li>
+<li><p><a class="reference external" href="PWM">class PWM - pulse width modulation</a></p></li>
+<li><p><a class="reference external" href="Servo">class Servo - 3-wire pwm servo driver</a></p></li>
+<li><p><a class="reference external" href="UART">class UART - serial communication bus</a></p></li>
+<li><p><a class="reference external" href="I2C">class I2C - IIC bus</a></p></li>
+<li><p><a class="reference external" href="Remote">class Remote - remote with ble</a></p></li>
+<li><p><a class="reference external" href="IOT">class IOT - internet of things</a></p></li>
+<li><p><a class="reference external" href="Music">class Music - notes and beats</a></p></li>
+<li><p><a class="reference external" href="Color">class Color - rgb color</a></p></li>
+<li><p><a class="reference external" href="Camera">class Camera - camera module</a></p></li>
+<li><p><a class="reference external" href="TTS">class TTS - text to speech</a></p></li>
+<li><p><a class="reference external" href="IRQ">class IRQ - external interrupter</a></p></li>
+<li><p><a class="reference external" href="WiFi">class WiFi - Wi-Fi set up</a></p></li>
+<li><p><a class="reference external" href="Taskmgr">class Taskmgr - task manager</a></p></li>
+<li><p><a class="reference external" href="SendMail">class SendMail - email library</a></p></li>
+<li><p><a class="reference external" href="Ultrasonic">class Ultrasonic - ultrasonic ranging sensor</a></p></li>
+<li><p><a class="reference external" href="DS18X20">class DS18X20 - ds18x20 series temperature sensor</a></p></li>
+<li><p><a class="reference external" href="ADXL345">class ADXL345 - accelemeter</a></p></li>
+<li><p><a class="reference external" href="RGB_LED">class RGB_LED - rgb LED</a></p></li>
+<li><p><a class="reference external" href="Buzzer">class Buzzer - passive buzzer</a></p></li>
+<li><p><a class="reference external" href="Sound">class Sound - sound sensor</a></p></li>
+<li><p><a class="reference external" href="Joystick">class Joystick - 3-axis joystick</a></p></li>
+<li><p><a class="reference external" href="LED">class LED - led driver</a></p></li>
+<li><p><a class="reference external" href="Switch">class Switch - switches</a></p></li>
+<li><p><a class="reference external" href="BLE">class BLE - bluetooth driver</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to technicalDocumentation’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, john
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

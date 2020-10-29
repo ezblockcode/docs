@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>class NRF24 - NRF24L01 communication module &mdash; technicalDocumentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> technicalDocumentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ezblock.html">ezblock</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">technicalDocumentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>class NRF24 - NRF24L01 communication module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ezblock/nrf24.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-nrf24-nrf24l01-communication-module">
+<h1>class NRF24 - NRF24L01 communication module<a class="headerlink" href="#class-nrf24-nrf24l01-communication-module" title="Permalink to this headline">¶</a></h1>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from ezblock import NRF24
+#write mode
+pipes = [[0xe7, 0xe7, 0xe7, 0xe7, 0xe7], [0xc2, 0xc2, 0xc2, 0xc2, 0xc2]]
+radio = NRF24()
+radio.begin(0, 0, 25, 18)  #Initialize SPI bus and Set CE and IRQ pins
+radio.setRetries(15,15)  #set max retries
+radio.setPayloadSize(8)  #set send byte size max is 32 
+radio.setChannel(0x60)  #set nrf24 channel
+radio.setDataRate(NRF24.BR_250KBPS)  #set send data rate
+radio.setPALevel(NRF24.PA_MAX)  #set PA Levels
+radio.setAutoAck(1)  #open auto ack
+radio.openWritingPipe(pipes[1])  #open write pipe
+radio.openReadingPipe(1, pipes[0])  #open read pipe
+radio.startListening()
+radio.stopListening()
+radio.printDetails()  #print details
+radio.write([6,6,6])  #send data
+#read mode
+pipes = [[0xe7, 0xe7, 0xe7, 0xe7, 0xe7], [0xc2, 0xc2, 0xc2, 0xc2, 0xc2]]
+radio = NRF24()
+radio.begin(0, 0, 25, 18)
+radio.setRetries(15,15)
+radio.setPayloadSize(8)
+radio.setChannel(0x60)
+radio.setDataRate(NRF24.BR_250KBPS)
+radio.setPALevel(NRF24.PA_MAX)
+radio.setAutoAck(1)
+radio.openWritingPipe(pipes[0])
+radio.openReadingPipe(1, pipes[1])
+radio.startListening()
+radio.stopListening()
+radio.printDetails()
+radio.startListening()
+while True：
+    while not radio.available(pipe, True, irq_timeout=1000):
+            print(&quot;not avaiable&quot;)
+            time.sleep(1000/1000000.0)
+    recv_buffer = []
+    radio.read(recv_buffer)  #read data
+</pre></div>
+</div>
+<div class="section" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">ezblock.NRF24()</span></code>
+Create an nrf24l01 object,this s a single chip radio transceiver for the world wide 2.4 - 2.5 GHz ISMband.Output power, frequency channels, and protocol setup are easily programmable through a SPI interface.</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>begin - Initialize SPI bus and set CE and IRQ pins</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">major</span><span class="p">,</span> <span class="n">minor</span><span class="p">,</span> <span class="n">ce_pin</span><span class="p">,</span> <span class="n">irq_pin</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setRetries - set max retries</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setRetries</span><span class="p">(</span><span class="n">delay</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setPayloadSize - set send byte size max is 32</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setPayloadSize</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setChannel</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setChannel</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setDataRate</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setDataRate</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setPALevel</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setPALevel</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>setAutoAck</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">setAutoAck</span><span class="p">(</span><span class="n">enable</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>openWritingPipe</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">openWritingPipe</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>openReadingPipe</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">openReadingPipe</span><span class="p">(</span><span class="n">pipe</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>startListening</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">startListening</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>stopListening</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">stopListening</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>printDetails - print details</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">printDetails</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>irqWait - Block program until falling edge is detected</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">irqWait</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">30000</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>available - Check whether data is received</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">available</span><span class="p">(</span><span class="n">pipe_num</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">irq_wait</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">irq_timeout</span><span class="o">=</span><span class="mi">30000</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>read_register</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">read_register</span><span class="p">(</span><span class="n">reg</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>write_register - Write register value</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">write_register</span><span class="p">(</span><span class="n">reg</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>write_payload - Writes data to the payload register, automatically padding it to match the required length</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">write_payload</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>read_payload - Reads data from the payload register and sets the DR bit of the STATUS register</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">read_payload</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">buf_len</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">#if len Less than zero,len equal to the size of the sent data</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>write - send data</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>read - receive data</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">buf_len</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">#if len Less than zero,len equal to the size of the sent data</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>reset</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NRF24</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, john
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
