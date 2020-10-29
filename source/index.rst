@@ -1,5 +1,5 @@
 
-Ezblock Documentaion
+Ezblock
 ==================================================
 
 .. toctree::
