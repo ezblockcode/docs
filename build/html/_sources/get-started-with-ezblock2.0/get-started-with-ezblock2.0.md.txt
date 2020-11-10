@@ -12,6 +12,3 @@
 ![a](./img/ezblock2.0-gettingstart10.png)
 ![a](./img/ezblock2.0-gettingstart11.png)
 ![a](./img/ezblock2.0-gettingstart12.png)
-![a](./img/ezblock2.0-gettingstart13.png)
-![a](./img/ezblock2.0-gettingstart14.png)
-![a](./img/ezblock2.0-gettingstart15.png)
