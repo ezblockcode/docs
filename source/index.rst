@@ -1,10 +1,8 @@
 
 Ezblock Technical documentation
 ==================================================
-
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    get-started-with-ezblock2.0/get-started-with-ezblock2.0
-    reference-for-python/ezblock
+    tutorial
 
