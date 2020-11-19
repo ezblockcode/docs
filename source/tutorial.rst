@@ -6,3 +6,4 @@ Tutorial
 
     get-started-with-ezblock2.0/function_Introduction
     reference-for-python/ezblock
+    reference-for-block/block

@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>logic &mdash; Ezblock  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="basic" href="basic.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Ezblock
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorial.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../get-started-with-ezblock2.0/function_Introduction.html">function Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference-for-python/ezblock.html">Reference for Python</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="block.html">Reference for Block</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="block.html#product">Product</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="basic.html">basic</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Ezblock</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tutorial.html">Tutorial</a> &raquo;</li>
+        
+          <li><a href="block.html">Reference for Block</a> &raquo;</li>
+        
+      <li>logic</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reference-for-block/logic.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="logic">
+<h1>logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><img alt="asef" src="../_images/ifdo.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> Used to capture changes in variables to respond When the condition is met, that is, when the parameter value is true, the content of the block will be executed</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><img alt="a" src="../_images/dengdengyu.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> Compare the left and right parameters, return a Boolean value, return true if the condition is met, otherwise return false</p></li>
+<li><p><strong>parameter：</strong> The value type on the left and right sides must be the same, for example, both are numbers or both are characters</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul>
+<li><p><img alt="a" src="../_images/and.jpg" /></p>
+<ul class="simple">
+<li><p><strong>effect：</strong> It will return a Boolean value, and the parameters on both sides must also be Boolean values. <strong>If both sides are true</strong>, return <strong><code class="docutils literal notranslate"><span class="pre">true</span></code></strong>. <strong>If either party is false or both parties are false</strong>, return <strong><code class="docutils literal notranslate"><span class="pre">false</span></code></strong>.</p></li>
+</ul>
+</li>
+<li><p><img alt="a" src="../_images/or.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> Returns a boolean value, the parameters on both sides must also be boolean values, <strong>as long as either of them is <code class="docutils literal notranslate"><span class="pre">true</span></code></strong>, it will return <code class="docutils literal notranslate"><span class="pre">true</span></code>, <strong>and only when both are <code class="docutils literal notranslate"><span class="pre">fasle</span></code></strong> will it return <code class="docutils literal notranslate"><span class="pre">false</span></code><br /><img alt="a" src="../_images/andexample.jpg" /><br />computational results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">true</span>
+    <span class="n">false</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul>
+<li><p><img alt="a" src="../_images/not.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> Splicing before the block whose return value is Boolean will get the <strong>opposite Boolean value</strong><br /><img alt="a" src="../_images/notexample.jpg" /><br />computational results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">false</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><img alt="a" src="../_images/true.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> That is, the boolean value <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></li>
+</ul>
+</li>
+<li><p><img alt="a" src="../_images/false.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> That is, the boolean value <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><img alt="a" src="../_images/null.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> Generally used to compare or assign values to variables</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><img alt="a" src="../_images/on.jpg" /></p></li>
+<li><p><img alt="a" src="../_images/off.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> In fact, it has the same function as the <code class="docutils literal notranslate"><span class="pre">true</span></code> block and the <code class="docutils literal notranslate"><span class="pre">false</span></code> block. They are all boolean values, but this block is more suitable for switch state assignment.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<ul>
+<li><p><img alt="a" src="../_images/test.jpg" /></p>
+<ul>
+<li><p><strong>effect：</strong> This is a ternary expression, if the return value of <code class="docutils literal notranslate"><span class="pre">test</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> then the block after <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">true</span></code> will be executed, and vice versa</p></li>
+<li><p><strong>example：</strong><br /><img alt="a" src="../_images/testexample.jpg" /><br />computational results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">equality</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="basic.html" class="btn btn-neutral float-left" title="basic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, sunfounder
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
