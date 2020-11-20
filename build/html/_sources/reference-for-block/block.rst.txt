@@ -11,3 +11,4 @@ Product
     
     basic
     logic
+    loops

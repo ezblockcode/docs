@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="loops" href="loops.html" />
     <link rel="prev" title="basic" href="basic.html" /> 
 </head>
 
@@ -81,12 +82,13 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../tutorial.html">Tutorial</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../get-started-with-ezblock2.0/function_Introduction.html">function Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get-started-with-ezblock2.0/get-started-with-ezblock2.0.html">function Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference-for-python/ezblock.html">Reference for Python</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="block.html">Reference for Block</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="block.html#product">Product</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="basic.html">basic</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">logic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="loops.html">loops</a></li>
 </ul>
 </li>
 </ul>
@@ -163,30 +165,29 @@
             
   <div class="section" id="logic">
 <h1>logic<a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a">
+<h2><img alt="a" src="../_images/ifdo.jpg" /><a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><img alt="asef" src="../_images/ifdo.jpg" /></p>
-<ul>
 <li><p><strong>effect：</strong> Used to capture changes in variables to respond When the condition is met, that is, when the parameter value is true, the content of the block will be executed</p></li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
+<div class="section" id="id1">
+<h2><img alt="a" src="../_images/dengdengyu.jpg" /><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><img alt="a" src="../_images/dengdengyu.jpg" /></p>
-<ul>
 <li><p><strong>effect：</strong> Compare the left and right parameters, return a Boolean value, return true if the condition is met, otherwise return false</p></li>
 <li><p><strong>parameter：</strong> The value type on the left and right sides must be the same, for example, both are numbers or both are characters</p></li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
-<ul>
-<li><p><img alt="a" src="../_images/and.jpg" /></p>
+<div class="section" id="id2">
+<h2><img alt="a" src="../_images/and.jpg" /><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>effect：</strong> It will return a Boolean value, and the parameters on both sides must also be Boolean values. <strong>If both sides are true</strong>, return <strong><code class="docutils literal notranslate"><span class="pre">true</span></code></strong>. <strong>If either party is false or both parties are false</strong>, return <strong><code class="docutils literal notranslate"><span class="pre">false</span></code></strong>.</p></li>
 </ul>
-</li>
-<li><p><img alt="a" src="../_images/or.jpg" /></p>
+</div>
+<div class="section" id="id3">
+<h2><img alt="a" src="../_images/or.jpg" /><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p><strong>effect：</strong> Returns a boolean value, the parameters on both sides must also be boolean values, <strong>as long as either of them is <code class="docutils literal notranslate"><span class="pre">true</span></code></strong>, it will return <code class="docutils literal notranslate"><span class="pre">true</span></code>, <strong>and only when both are <code class="docutils literal notranslate"><span class="pre">fasle</span></code></strong> will it return <code class="docutils literal notranslate"><span class="pre">false</span></code><br /><img alt="a" src="../_images/andexample.jpg" /><br />computational results:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">true</span>
@@ -195,11 +196,10 @@
 </div>
 </li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
-<ul>
-<li><p><img alt="a" src="../_images/not.jpg" /></p>
+<div class="section" id="id4">
+<h2><img alt="a" src="../_images/not.jpg" /><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p><strong>effect：</strong> Splicing before the block whose return value is Boolean will get the <strong>opposite Boolean value</strong><br /><img alt="a" src="../_images/notexample.jpg" /><br />computational results:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">false</span>
@@ -207,41 +207,40 @@
 </div>
 </li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
+<div class="section" id="id5">
+<h2><img alt="a" src="../_images/true.jpg" /><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><img alt="a" src="../_images/true.jpg" /></p>
-<ul>
 <li><p><strong>effect：</strong> That is, the boolean value <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></li>
 </ul>
-</li>
-<li><p><img alt="a" src="../_images/false.jpg" /></p>
-<ul>
+</div>
+<div class="section" id="id6">
+<h2><img alt="a" src="../_images/false.jpg" /><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li><p><strong>effect：</strong> That is, the boolean value <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p></li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
+<div class="section" id="id7">
+<h2><img alt="a" src="../_images/null.jpg" /><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><img alt="a" src="../_images/null.jpg" /></p>
-<ul>
 <li><p><strong>effect：</strong> Generally used to compare or assign values to variables</p></li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
+<div class="section" id="id8">
+<h2><img alt="a" src="../_images/on.jpg" /><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2><img alt="a" src="../_images/off.jpg" /><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><img alt="a" src="../_images/on.jpg" /></p></li>
-<li><p><img alt="a" src="../_images/off.jpg" /></p>
-<ul>
 <li><p><strong>effect：</strong> In fact, it has the same function as the <code class="docutils literal notranslate"><span class="pre">true</span></code> block and the <code class="docutils literal notranslate"><span class="pre">false</span></code> block. They are all boolean values, but this block is more suitable for switch state assignment.</p></li>
 </ul>
-</li>
-</ul>
+</div>
 <hr class="docutils" />
-<ul>
-<li><p><img alt="a" src="../_images/test.jpg" /></p>
+<div class="section" id="id10">
+<h2><img alt="a" src="../_images/test.jpg" /><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p><strong>effect：</strong> This is a ternary expression, if the return value of <code class="docutils literal notranslate"><span class="pre">test</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> then the block after <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">true</span></code> will be executed, and vice versa</p></li>
 <li><p><strong>example：</strong><br /><img alt="a" src="../_images/testexample.jpg" /><br />computational results:</p>
@@ -250,9 +249,8 @@
 </div>
 </li>
 </ul>
-</li>
-</ul>
 <hr class="docutils" />
+</div>
 </div>
 
 
@@ -262,6 +260,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="loops.html" class="btn btn-neutral float-right" title="loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="basic.html" class="btn btn-neutral float-left" title="basic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
