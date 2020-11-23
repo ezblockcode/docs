@@ -13,3 +13,5 @@ Product
     logic
     loops
     math
+    text
+    lists
