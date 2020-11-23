@@ -12,3 +12,4 @@ Product
     basic
     logic
     loops
+    math
