@@ -5,4 +5,5 @@ Ezblock Technical documentation
     :maxdepth: 2
 
     tutorial
+    reference
 

@@ -1,4 +1,4 @@
-Reference for Python
+Python
 ====================
 
 ezblock

@@ -1,4 +1,4 @@
-# lists
+# Lists
 ## ![a](./img/lists/createemptylist.jpg)
 - **effect：** More often, an empty list is assigned to a variable, or it can be output directly.
 ***

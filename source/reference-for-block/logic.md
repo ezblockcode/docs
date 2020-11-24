@@ -1,4 +1,4 @@
-# logic
+# Logic
 
 ## ![a](./img/logic/ifdo.jpg)  
 - **effect：** Used to capture changes in variables to respond When the condition is met, that is, when the parameter value is true, the content of the block will be executed 

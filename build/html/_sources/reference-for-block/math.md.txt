@@ -1,4 +1,4 @@
-# math
+# Math
 
 ## ![a](./img/math/ling.jpg)  
 - **effect：** Usually a digital block for assignment, the parameter can be negative or decimals.

@@ -1,4 +1,4 @@
-# basic
+# Basic
 
 ## ![a](./img/text/diandian.jpg) 
 - **effect：** String value, generally used for assignment or judgment

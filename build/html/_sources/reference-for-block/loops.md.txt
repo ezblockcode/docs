@@ -1,4 +1,4 @@
-# loops
+# Loops
 
 ## ![a](./img/loops/repeat.jpg)  
 - **effect：** The code in the block will be executed a certain number of times
