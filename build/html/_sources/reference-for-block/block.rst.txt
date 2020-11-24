@@ -13,3 +13,6 @@ This article introduces the use and annotation of blocks in block programming
     text
     lists
     music
+    colour
+    variables
+    functions
