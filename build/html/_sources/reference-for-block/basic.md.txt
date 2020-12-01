@@ -1,12 +1,12 @@
 # Basic
 
 
-## ![a](./img/basic/Start.jpg)  
+## ![a](./img/basic/start.jpg)  
 - **effect：** The block placed in Start will only be executed once, which is suitable for some initialization operations in the block
 ***
     
 
-## ![a](./img/basic/Forever.jpg)  
+## ![a](./img/basic/forever.jpg)  
 - **effect：** The content in the block will loop indefinitely
 ***
 

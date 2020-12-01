@@ -16,3 +16,4 @@ This article introduces the use and annotation of blocks in block programming
     colour
     variables
     functions
+    raspberryPI
