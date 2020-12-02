@@ -1,13 +1,20 @@
-# IoT-Sensor-Kit
+# Examples
 This page show you the examples provided with IoT Sensor Kit.
 
 ## Open the Example
 1. Select the product as IoT Sensor Kit
+![select_product](pic/select_product.png)
 2. Go to Example page
+![go_to_example_page](pic/go_to_example_page.png)
 3. Open the example you dare interest
+![you_dare](pic/you_dare.png)
+4. Open tutorials
+![open_tutorial](pic/open_tutorial.png)
 4. Find the corresponding tutorial
+![find_tutorial](pic/find_tutorial.png)
 5. Follow the tutorial to build the circuit
-6. Play according to tips
+![see_tutorials](pic/see_tutorials.png)
+6. Play according to USAGE.
 
 -------------------------------
 ## Twilight Switch
@@ -15,7 +22,7 @@ In this example, you will use photoresistor to make an automatic sensor light. B
 
 The circuit is built as follows:  
 
-![twilight_switch](img/twilight_switch.jpg)
+![twilight_switch](pic/twilight_switch.jpg)
 
 Usage:  
 1. Flash the code
@@ -29,10 +36,10 @@ Usage:
 In this example, you will create a voice-activated light using a sound sensor. The light will turn on automatically when there is enough sound. Connecting this light to the Internet allows us to turn off the light remotely at the touch of a button on the IoT interface.
 
 The circuit is built as follows:    
-![sound_lamp](img/sound_lamp.jpg)
+![sound_lamp](pic/sound_lamp.jpg)
 
 The IoT control is shown below:   
-![iot_sound_lamp](img/iot_sound_lamp.png)
+![iot_sound_lamp](pic/iot_sound_lamp.png)
 
 Usage:
 1. Modify Wifi Configuration
@@ -46,10 +53,10 @@ Usage:
 In this example, you will record the sound sensor readings in a line graph. You can see from the line chart when your living environment is the noisiest.
 
 The circuit is built as follows:    
-![noisy](img/noisy.jpg)
+![noisy](pic/noisy.jpg)
 
 The remote controls are as follows: 
-![rc_noisy](img/rc_noisy.png)
+![rc_noisy](pic/rc_noisy.png)
 
 Usage:  
 1. Flash the code
@@ -62,7 +69,7 @@ Usage:
 The Theremin is the only electronic instrument in the world that does not require physical contact to play. Let's use ultrasonic sensors to make an instrument that also doesn't require physical contact!
 
 The circuit is built as follows:  
-![organ](img/organ.jpg)
+![organ](pic/organ.jpg)
 
 Usage:
 1. Flash the code
@@ -74,7 +81,7 @@ Usage:
 Let's make a magic wand. Tie the RGB module and tilt switch to a small stick. Wave the stick and the light will change to different colors.
 
 The circuit is built as follows:  
-![magic_wand](img/magic_wand.jpg)
+![magic_wand](pic/magic_wand.jpg)
 
 Usage:
 1. Flash the code
@@ -85,7 +92,7 @@ Usage:
 Monitor the temperature with the DS18B20! The real-time temperature of the room is seen in the Iot interface. The circuit is also connected to an RGB light that glows red when it is hot, blue when it is cold, and green when it is comfortable. You can test the temperature experiment with a cold water bottle or with warm hands.
 
 The circuit is built as follows:  
-![hot_alarm](img/hot_alarm.jpg)
+![hot_alarm](pic/hot_alarm.jpg)
 
 Usage:
 1. Flash the code
@@ -95,7 +102,7 @@ Usage:
 Control the color of the RGB LEDs with the acceleration in the three axis directions of ADXL345. What happens? When you wave the ADXL345 at will, the RGB LEDs will change color. When you wave the ADXL345 and the RGB LED together, a rainbow of colors appears!
 
 The circuit is built as follows:    
-![rainbow](img/rainbow.jpg)
+![rainbow](pic/rainbow.jpg)
 
 Usage:
 1. Flash the code
@@ -106,10 +113,10 @@ Usage:
 Let's build a smart garage system where we press button in the IoT interface, the garage door (controlled by servo) will open and the ultrasonic sensor will sense the car's position. When the car is far away, the garage door will close automatically.
 
 The circuit is built as follows:    
-![door](img/door.jpg)
+![door](pic/door.jpg)
 
 The IoT control is shown below: 
-![iot_door](img/iot_door.png)
+![iot_door](pic/iot_door.png)
 
 Usage:
 1. Modify Wifi Configuration 
@@ -121,10 +128,10 @@ Usage:
 Make a little game with button and digital display! The numbers will increase rapidly, so you have to press the button when the number reaches 100, and if the pinch is successful, You Win!
 
 The circuit is built as follows:    
-![count100](img/count100.jpg)
+![count100](pic/count100.jpg)
 
 The remote controls are as follows: 
-![rc_count100](img/rc_count100.png)
+![rc_count100](pic/rc_count100.png)
 
 Usage:
 1. Flash the code
@@ -136,10 +143,10 @@ Usage:
 Make a monitor for your potted plant! With IoT, you can use photoresistor and moisture module to know the current growing environment of your plants even when you are not at home, and to give them additional light.
 
 The circuit is built as follows:    
-![plant_monitoring](img/plant_monitoring.jpg)
+![plant_monitoring](pic/plant_monitoring.jpg)
 
 The IoT control is shown below: 
-![iot_plant_monitoring](img/iot_plant_monitoring.png)
+![iot_plant_monitoring](pic/iot_plant_monitoring.png)
 
 Usage:
 1. Modify Wifi Configuration 
