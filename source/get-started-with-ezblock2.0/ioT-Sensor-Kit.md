@@ -1,4 +1,4 @@
-# Examples
+# IOT-Sensor-Kit
 This page show you the examples provided with IoT Sensor Kit.
 
 ## Open the Example
