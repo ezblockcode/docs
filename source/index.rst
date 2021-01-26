@@ -6,5 +6,4 @@ Ezblock Technical documentation
 
     tutorial
     reference
-    asd
 
