@@ -6,4 +6,5 @@ Ezblock Technical documentation
 
     tutorial
     reference
+    jimmy ces 1
 
