@@ -4,9 +4,8 @@ Python
 ezblock
 --------
 Under ezblock, the classes and methods used
-
 import everything
-:code:`from ezblock import *`
+:code:`from ezblock import 123*`
 
 
 Methods
