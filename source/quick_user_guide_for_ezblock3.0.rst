@@ -1,25 +1,25 @@
 Quick User Guide for Ezblock 3.0
 =====================================
 
-About Ezblock 3.0
+About Ezblock 3
 ----------------------
 
-The biggest optimization of Ezblock App upgrade from v2.0 to v3.0 is to modify the communication method, v2.0 uses **Bluetooth communication**, v3.0 uses **Websocket communication**, which is network communication.
+The biggest optimization of Ezblock App upgrade from Ezblock 2 to Ezblock 3 is to modify the communication method, v2.0 uses **Bluetooth communication**, Ezblock 3 uses **Websocket communication**, which is network communication.
 
-V3.0's network communication speed will be much faster than v2.0; for the v3.0 version, we have also optimized and improved the connection process and almost all interfaces to make the APP more smooth and easy to use.
+Ezblock 3's network communication speed will be much faster than Ezblock 2; for the Ezblock 3 version, we have also optimized and improved the connection process and almost all interfaces to make the APP more smooth and easy to use.
 
-The Ezblock v3.0 version should be used with the Ezblock v3.0 iamge (`EzBlock Studio Download Center <https://ezblock.cc/download/index.html>`_.). The v3.0 version is currently in the public test stage. 
+The Ezblock 3 version should be used with the Ezblock 3 image (`Ezblock Studio Download Center <https://ezblock.cc/download/index.html>`_.). The v3.0 version is currently in the public test stage. 
 
 If there is a problem during use, please send an email to us, and we will test it several times to ensure that there is no problem in use.
 
 Here is the Email: cs@sunfounder.com.
 
-Download and Write V3.0 image
+Download and Write Ezblock 3 image
 ------------------------------------
 
 1. Prepare the tool of image burning. Here we use the Etcher. Now，download the software from here: `Etcher <https://www.balena.io/etcher/>`_.
 
-2. Download the **Raspberry Pi OS for Ezblock 3 Beta** image file here: `EzBlock Studio Download Center <https://ezblock.cc/download/index.html>`_.
+2. Download the **Raspberry Pi OS for Ezblock 3 Beta** image file here: `Ezblock Studio Download Center <https://ezblock.cc/download/index.html>`_.
 
 3. Unzip the package downloaded and you will see the .img file inside.
 
